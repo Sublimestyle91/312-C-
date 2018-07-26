@@ -16,6 +16,7 @@ int main()
 {
 	// local variables
 	int arg = 10;
+	int arg2 = 11; // unused variable
 	
 	// Run program
 	programA(10);
