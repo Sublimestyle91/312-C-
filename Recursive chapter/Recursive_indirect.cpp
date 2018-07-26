@@ -9,11 +9,21 @@ using namespace std;
 // Prototypes
 void programA(int);
 void programB(int);
+void showme(int);
 
 
 int main()
 {
+	// local variables
+	int arg = 10;
+	
+	// Run program
 	programA(10);
+	
+	//difference between ++arg in function and arg++
+	showme(++arg); //++arg updates number first and then sends it to function
+	showme(arg++); // arg++ updates after using it in the funcion
+	cout << arg << endl;	
 	return 0;
 }
 
@@ -41,4 +51,12 @@ void programB(int times)
 	programA(times);
 	cout << "We are now leaving program B\n";
 	
+}
+
+/******************************************************
+					showme
+*******************************************************/
+void showme(int arg)
+{
+	cout<< arg << endl;
 }
